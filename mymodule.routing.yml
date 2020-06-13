@@ -1,0 +1,6 @@
+mymodule.apikeymatch:
+  path: '/page_json/{siteapikey_input}/{nid_input}'
+  defaults:
+    _controller: '\Drupal\mymodule\Controller\MyController::getNodeJSON'
+  requirements:
+    _permission: 'access content'
